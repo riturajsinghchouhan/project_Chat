@@ -1,0 +1,95 @@
+/* =====================
+   SIDEBAR
+===================== */
+.sidebar {
+  width: 400px;
+  height: 100vh;
+  background: #9f9f9f;
+  border-right: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =====================
+   SEARCH BAR
+===================== */
+.search {
+  padding: 12px 14px;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  outline: none;
+  font-size: 14px;
+  background: #202c33;
+}
+
+.search::placeholder {
+  color: #888;
+}
+
+/* =====================
+   CONTACT ITEM
+===================== */
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.contact:hover {
+  background: #f5f6f6;
+}
+
+/* =====================
+   AVATAR
+===================== */
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #d1d7db;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* ONLINE DOT */
+.online-dot {
+  width: 10px;
+  height: 10px;
+  background: #25d366;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  border: 2px solid white;
+}
+
+/* =====================
+   USER INFO
+===================== */
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.info strong {
+  font-size: 14px;
+  font-weight: 500;
+  color: #111;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.info p {
+  font-size: 13px;
+  color: #667781;
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
